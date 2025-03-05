@@ -1,17 +1,21 @@
 package object1;
 
 public class Car {
+        //Initialization of variables
         private String make;
         private String model;
         private int year;
         private int mileage;
 
+        //Constructor
         public Car(String make, String model, int year, int mileage) {
             this.make = make;
             this.model = model;
             this.year = year;
             this.mileage = mileage;
         }
+
+
 
         public String getMake() {
             return make;
@@ -44,4 +48,7 @@ public class Car {
         public void setMileage(int mileage) {
             this.mileage = mileage;
         }
+
+
+
 }

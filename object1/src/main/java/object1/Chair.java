@@ -1,7 +1,8 @@
 package object1;
 
 public class Chair {
-        private String material;
+    //Initialization of variables
+    private String material;
         private String color;
         private int legs;
 
