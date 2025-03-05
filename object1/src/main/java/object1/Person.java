@@ -9,14 +9,15 @@ class Person {
     int height = 0; //Units are "centimeters".
 
     // Constructor
-    public Person(String name, int age) {
+    public Person(String name, int age, int height) {
         this.name = name;
         this.age = age;
+        this.height = height;
     }
 
     public static void main(String[] args) {
         // Declare and initialize an object
-        Person person1 = new Person("John", 30);
+        Person person1 = new Person("John", 30, 175);
 
         /* Now you can use the Object `person1` */
 
