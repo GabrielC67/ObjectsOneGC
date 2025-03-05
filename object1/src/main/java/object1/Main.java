@@ -15,5 +15,7 @@ public class Main {
         Car vehicle = new Car("Toyota", "Supra", 1997, 69657);
         System.out.println((vehicle.getYear() + " " + vehicle.getMake() + " " + vehicle.getModel() + " " + vehicle.getMileage()));
 
+        Chair features = new Chair("Cotton", "Green", 8);
+        System.out.println(features.getColor() + " " + features.getMaterial() + " chair with " + features.getLegs() + " legs.");
     }
 }
