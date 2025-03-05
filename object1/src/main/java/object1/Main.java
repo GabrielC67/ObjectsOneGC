@@ -17,5 +17,8 @@ public class Main {
 
         Chair features = new Chair("Cotton", "Green", 8);
         System.out.println(features.getColor() + " " + features.getMaterial() + " chair with " + features.getLegs() + " legs.");
+
+        Dog type = new Dog("Cocker Spaniel", 3, "Sporting Dog");
+        System.out.println("This " + type.getName()  + ", is a " + type.getBreed() + " that is " + type.getAge() + " years old!");
     }
 }
