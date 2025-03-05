@@ -8,6 +8,7 @@ public class Main {
     public static void main(String... args) {
         Logger logger=Logger.getLogger(Main.class.getName());
         logger.info("This is a module-using Hello World!");
+
         Person person2 = new Person("Gabriel", 39, 167);
         System.out.print(person2.name + " ");
         System.out.print(person2.age + " ");
@@ -25,5 +26,7 @@ public class Main {
         System.out.println("This " + type.getName()  + ", is a " + type.getBreed() + " that is " + type.getAge() + " years old!");
 
         System.out.println(vehicle2.getYear() + " " + vehicle2.getMake() + " "  + vehicle2.getModel() + " with " + vehicle2.getMileage());
+
+
     }
 }
