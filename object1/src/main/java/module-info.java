@@ -1,3 +1,4 @@
 module com.example.test {
-    requires java.logging;
+    requires kotlin.stdlib;
+    requires java.sql;
 }
