@@ -9,10 +9,17 @@ public class Main {
         Logger logger=Logger.getLogger(Main.class.getName());
         logger.info("This is a module-using Hello World!");
 
+
+
+        Person person1 = new Person("John", 30, 175);
         Person person2 = new Person("Gabriel", 39, 167);
+        Person person3 = new Person("Jorge", 67, 154);
+        /* Now you can use the Object `person1` */
         System.out.print(person2.name + " ");
         System.out.print(person2.age + " ");
         System.out.println(person2.height);
+        System.out.println("Name is: " + person1.name + ". He is " + person1.age + " years old. He is " + person1.height + "cm tall.");
+        System.out.println("Name is: " + person2.name + ". He is " + person2.age + " years old. He is " + person2.height + "cm tall.");
         System.out.println("This person's name is " + person2.name + ". This perons is " + person2.age + " years old. He is " + person2.height + "cm tall!");
         Car car1 = new Car("Toyota", "Supra", 1997, 69657, "Black");
         Car car2 = new Car("Mazda", "Protege", 1999, 124325, "Emerald Mica");
@@ -35,9 +42,19 @@ public class Main {
         Dog type = new Dog("Cocker Spaniel", 3, "Sporting Dog");
         System.out.println("This " + type.getName()  + ", is a " + type.getBreed() + " that is " + type.getAge() + " years old!");
 
+/* A Class is the blueprint of the objects. One can make a bunch of objects from many different classes AS LONG
+AS objects' class possess the same name of the class that the object comes from when called.
+For example, an object from Car class must also have the attribute attached to it in order to retrieve that
+attribute from the class'. Whether a constuctor is used or not.
+         */
+        Person[] people = new Person[3];
+        people[0] = person1;
+        people[1] = person2;
+        people[2] = person3;
 
-
-
+        for (int i = 0; i < people.length; i++) {
+            System.out.println("Name: " + people[i].name + "\nAge: " + people[i].age + "\nHeight: " + people[i].height);
+        }
 
     }
 }
